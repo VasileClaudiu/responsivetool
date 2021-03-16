@@ -5,6 +5,6 @@
 </head>
 <body>
 	<h1>Responsive tool</h1>
-	<a href="https://vasileclaudiu.github.io/responsivetool/"><strong>DEMO</strong></a>
+	<a href="https://vasileclaudiu.github.io/responsivetool/index.html"><strong>DEMO</strong></a>
 </body>
 </html>
