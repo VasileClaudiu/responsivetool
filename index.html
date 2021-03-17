@@ -34,6 +34,7 @@
                             <li><a id="mob-three" href="#">414|736|Apple iPhone 8 Plus</a></li>
                             <li><a id="mob-four" href="#">360|740|Samsung Galaxy S9</a></li>
                             <li><a id="mob-five" href="#">400|640|Samsung Galaxy Note</a></li>
+                            <li><a id="mob-six" href="#">473|1024|Apple iPhone XI PRO</a></li>
                             <li><a href="#">Another action</a></li>
                             <li><a href="#">Something else here</a></li>
                             <li role="separator" class="divider"></li>
@@ -285,7 +286,7 @@
                 $("#iframe").attr("height", $("#height").val());
                 //setUserAgent(document.querySelector('iframe').contentWindow, 'Aakash Chakravarthy Mobile Agent');
                 $("#iframe").attr("style", "background-image: none; background-color: rgb(255, 255, 255); display: inline-block; width: "+$("#width").val()+"px; height: "+$("#heigth").val()+"px;margin-right: 20px");
-                $("#device").text($("#width").val()+"|"+$("#heigth").val()+"|Custom");
+                $("#device").text($("#width").val()+"|"+$("#height").val()+"|Custom");
             });
             $("#mob-one").on('click', function() {
                 //alert("Mobile One");
@@ -322,6 +323,13 @@
                 $("#iframe").attr("height", 640);
                 $("#iframe").attr("style", "background-image: none; background-color: rgb(255, 255, 255); display: inline-block; width: 400px; height: 640px;margin-right: 20px");
                 $("#device").text("400|640|Samsung Galaxy Note");
+            });
+            $("#mob-six").on('click', function() {
+                //alert("Mobile One");
+                $("#iframe").attr("width", 473);
+                $("#iframe").attr("height", 1024);
+                $("#iframe").attr("style", "background-image: none; background-color: rgb(255, 255, 255); display: inline-block; width: 473px; height: 1024px;margin-right: 20px");
+                $("#device").text("473|1024|Apple iPhone XI PRO");
             });
             $("#tablet-one").on('click', function() {
                 //alert("Mobile One");
