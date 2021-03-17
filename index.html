@@ -88,6 +88,7 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    <li id="device">400|320|Mobile</li>
                     <li><a href="#">Link</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -282,6 +283,7 @@
                 $("#iframe").attr("height", $("#height").val());
                 //setUserAgent(document.querySelector('iframe').contentWindow, 'Aakash Chakravarthy Mobile Agent');
                 $("#iframe").attr("style", "background-image: none; background-color: rgb(255, 255, 255); display: inline-block; width: "+$("#width").val()+"px; height: "+$("#heigth").val()+"px;margin-right: 20px");
+                $("li#device").attr("html", "414|896|Apple iPhone XR");
             });
             $("#mob-one").on('click', function() {
                 //alert("Mobile One");
