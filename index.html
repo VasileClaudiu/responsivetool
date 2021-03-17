@@ -88,7 +88,7 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-center">
-                    <li id="device" style="color:white;marging-top:40px;">400|320|Mobile</li>
+                    <li id="device" style="color:white;top:15px;left:120px">400|320|Mobile</li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Link</a></li>
@@ -285,7 +285,7 @@
                 $("#iframe").attr("height", $("#height").val());
                 //setUserAgent(document.querySelector('iframe').contentWindow, 'Aakash Chakravarthy Mobile Agent');
                 $("#iframe").attr("style", "background-image: none; background-color: rgb(255, 255, 255); display: inline-block; width: "+$("#width").val()+"px; height: "+$("#heigth").val()+"px;margin-right: 20px");
-                $("li#device").attr("html", "414|896|Apple iPhone XR");
+                $("li#device").attr("text", $("#width").val()+"|"+$("#heigth").val()+"|Custom");
             });
             $("#mob-one").on('click', function() {
                 //alert("Mobile One");
@@ -293,84 +293,98 @@
                 $("#iframe").attr("height", 896);
                 //setUserAgent(document.querySelector('iframe').contentWindow, 'Aakash Chakravarthy Mobile Agent');
                 $("#iframe").attr("style", "background-image: none; background-color: rgb(255, 255, 255); display: inline-block; width: 414px; height: 896px;margin-right: 20px");
+                $("li#device").attr("text", "414|896|Apple iPhone XR");
             });
             $("#mob-two").on('click', function() {
                 //alert("Mobile One");
                 $("#iframe").attr("width", 375);
                 $("#iframe").attr("height", 812);
                 $("#iframe").attr("style", "background-image: none; background-color: rgb(255, 255, 255); display: inline-block; width: 375px; height: 812px;margin-right: 20px");
+                $("li#device").attr("text", "375|812|Apple iPhone X");
             });
             $("#mob-three").on('click', function() {
                 //alert("Mobile One");
                 $("#iframe").attr("width", 414);
                 $("#iframe").attr("height", 736);
                 $("#iframe").attr("style", "background-image: none; background-color: rgb(255, 255, 255); display: inline-block; width: 414px; height: 736px;margin-right: 20px");
+                $("li#device").attr("text", "414|736|Apple iPhone 8 Plus");
             });
             $("#mob-four").on('click', function() {
                 //alert("Mobile One");
                 $("#iframe").attr("width", 360);
                 $("#iframe").attr("height", 740);
                 $("#iframe").attr("style", "background-image: none; background-color: rgb(255, 255, 255); display: inline-block; width: 360px; height: 740px;margin-right: 20px");
+                $("li#device").attr("text", "360|740|Samsung Galaxy S9");
             });
             $("#mob-five").on('click', function() {
                 //alert("Mobile One");
                 $("#iframe").attr("width", 400);
                 $("#iframe").attr("height", 640);
                 $("#iframe").attr("style", "background-image: none; background-color: rgb(255, 255, 255); display: inline-block; width: 400px; height: 640px;margin-right: 20px");
+                $("li#device").attr("text", "400|640|Samsung Galaxy Note");
             });
             $("#tablet-one").on('click', function() {
                 //alert("Mobile One");
                 $("#iframe").attr("width", 800);
                 $("#iframe").attr("height", 1280);
                 $("#iframe").attr("style", "background-image: none; background-color: rgb(255, 255, 255); display: inline-block; width: 800px; height: 1280px;margin-right: 20px");
+                $("li#device").attr("text", "800|1280|Samsung Nexus 10");
             });
             $("#tablet-two").on('click', function() {
                 //alert("Mobile One");
                 $("#iframe").attr("width", 600);
                 $("#iframe").attr("height", 1024);
                 $("#iframe").attr("style", "background-image: none; background-color: rgb(255, 255, 255); display: inline-block; width: 600px; height: 1024px;margin-right: 20px");
+                $("li#device").attr("text", "600|1024|Samsung Galaxy Tab 2 (7")");
             });
             $("#tablet-three").on('click', function() {
                 //alert("Mobile One");
                 $("#iframe").attr("width", 800);
                 $("#iframe").attr("height", 1280);
                 $("#iframe").attr("style", "background-image: none; background-color: rgb(255, 255, 255); display: inline-block; width: 800px; height: 1280px;margin-right: 20px");
+                $("li#device").attr("text", "800|1280|Amazon Kindle Fire HD 8.9");
             });
             $("#tablet-four").on('click', function() {
                 //alert("Mobile One");
                 $("#iframe").attr("width", 1024);
                 $("#iframe").attr("height", 1440);
                 $("#iframe").attr("style", "background-image: none; background-color: rgb(255, 255, 255); display: inline-block; width: 1024px; height: 1440px;margin-right: 20px");
+                $("li#device").attr("text", "1024|1440|Microsoft Surface Pro 3");
             });
             $("#desktop-one").on('click', function() {
                 //alert("Mobile One");
                 $("#iframe").attr("width", 1024);
                 $("#iframe").attr("height", 600);
                 $("#iframe").attr("style", "background-image: none; background-color: rgb(255, 255, 255); display: inline-block; width: 1024px; height: 600px;margin-right: 20px");
+                $("li#device").attr("text", "1024|600|Desktop/Laptop");
             });
             $("#desktop-two").on('click', function() {
                 //alert("Mobile One");
                 $("#iframe").attr("width", 1024);
                 $("#iframe").attr("height", 768);
                 $("#iframe").attr("style", "background-image: none; background-color: rgb(255, 255, 255); display: inline-block; width: 1024px; height: 768px;margin-right: 20px");
+                $("li#device").attr("text", "1024|768|Desktop/Laptop");
             });
             $("#desktop-three").on('click', function() {
                 //alert("Mobile One");
                 $("#iframe").attr("width", 1920);
                 $("#iframe").attr("height", 1080);
                 $("#iframe").attr("style", "background-image: none; background-color: rgb(255, 255, 255); display: inline-block; width: 1920px; height: 1080px;margin-right: 20px");
+                $("li#device").attr("text", "1920|1080|Desktop/Laptop");
             });
             $("#television-one").on('click', function() {
                 //alert("Mobile One");
                 $("#iframe").attr("width", 3840);
                 $("#iframe").attr("height", 2160);
                 $("#iframe").attr("style", "background-image: none; background-color: rgb(255, 255, 255); display: inline-block; width: 3840px; height: 2160px;margin-right: 20px");
+                $("li#device").attr("text", "3840|2160|4K Television");
             });
             $("#television-two").on('click', function() {
                 //alert("Mobile One");
                 $("#iframe").attr("width", 7680);
                 $("#iframe").attr("height", 4320);
                 $("#iframe").attr("style", "background-image: none; background-color: rgb(255, 255, 255); display: inline-block; width: 7680px; height: 4320px;margin-right: 20px");
+                $("li#device").attr("text", "7680|4320|8K Television");
             });
         });
 
