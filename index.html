@@ -121,6 +121,9 @@
                             <input class="col-md-12 form-control" type="text" id="urlinput" name="urlinput"></input>
                         </div>
                     </div>
+                    <div class="col-xs-4 input-group form-inline">
+                        <button id="refresh" class="btn"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+                    </div>
                 </div>
                 <div class="col-xs-6">
                     <select class="select-custom" id="select">
@@ -168,9 +171,6 @@
                     </div>
                     <div class="col-xs-4 input-group form-inline">
                         <button class="btn btn-primary" id="btnSet" name="btnSet">Set</button>
-                    </div>
-                    <div class="col-xs-4 input-group form-inline">
-                        <button id="refresh" class="btn"><i class="fa fa-refresh" aria-hidden="true"></i></button>
                     </div>
                 </div>
             </div>
@@ -287,7 +287,8 @@
                 $("#iframe").attr("src", $("#urlinput").val());
             });
             $("#refresh").on('click', function() {
-                $("#iframe").contentDocument.location.reload(true);
+                //$("#iframe").contentDocument.location.reload(true);
+                $('#iframe').attr("src", $('#iframe').attr("src"));
             });
             $("#btnSet").on('click', function() {
                 //alert($("#width").val());
